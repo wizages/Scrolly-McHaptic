@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>General</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.wizages.scrollyprefs</string>
+			<key>key</key>
+			<string>enabled</string>
+			<key>PostNotification</key>
+			<string>com.wizages.scrollyprefs/ReloadPrefs</string>
+			<key>label</key>
+			<string>Enabled</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Top vibration settings</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.wizages.scrollyprefs</string>
+			<key>key</key>
+			<string>top_enabled</string>
+			<key>label</key>
+			<string>Top Vibration Enabled</string>
+			<key>PostNotification</key>
+			<string>com.wizages.scrollyprefs/ReloadPrefs</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSStaticTextCell</string>
+			<key>label</key>
+			<string>Intensity</string>
+		</dict>
+		<dict>
+		    <key>cellClass</key>
+		    <string>HBStepperTableCell</string>
+		    <key>default</key>
+		    <real>10</real>
+		    <key>defaults</key>
+		    <string>com.wizages.scrollyprefs</string>
+		    <key>key</key>
+		    <string>top_intensity</string>
+		    <key>label</key>
+		    <string>Vibration Intensity: %i</string>
+		    <key>max</key>
+		    <real>100</real>
+		    <key>min</key>
+		    <real>1</real>
+		    <key>singularLabel</key>
+		    <string>Vibration Intensity: 1</string>
+		    <key>PostNotification</key>
+			<string>com.wizages.scrollyprefs/ReloadPrefs</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Bot vibration settings</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.wizages.scrollyprefs</string>
+			<key>key</key>
+			<string>bot_enabled</string>
+			<key>label</key>
+			<string>Bot Vibration Enabled</string>
+			<key>PostNotification</key>
+			<string>com.wizages.scrollyprefs/ReloadPrefs</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSStaticTextCell</string>
+			<key>label</key>
+			<string>Intensity</string>
+		</dict>
+		<dict>
+		    <key>cellClass</key>
+		    <string>HBStepperTableCell</string>
+		    <key>default</key>
+		    <real>10</real>
+		    <key>defaults</key>
+		    <string>com.wizages.scrollyprefs</string>
+		    <key>key</key>
+		    <string>bot_intensity</string>
+		    <key>label</key>
+		    <string>Vibration Intensity: %i</string>
+		    <key>max</key>
+		    <real>100</real>
+		    <key>min</key>
+		    <real>1</real>
+		    <key>singularLabel</key>
+		    <string>Vibration Intensity: 1</string>
+		    <key>PostNotification</key>
+			<string>com.wizages.scrollyprefs/ReloadPrefs</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string></string>
+		</dict>
+		<dict>
+		    <key>big</key>
+		    <true/>
+		    <key>cellClass</key>
+		    <string>HBTwitterCell</string>
+		    <key>height</key>
+		    <integer>56</integer>
+		    <key>label</key>
+		    <string>Wizages</string>
+		    <key>user</key>
+		    <string>wizages</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>showSupportEmailController</string>
+			<key>cell</key>
+			<string>PSLinkCell</string>
+			<key>label</key>
+			<string>Support</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerAlignment</key>
+			<integer>1</integer>
+			<key>footerText</key>
+			<string>© 2017 Wizages</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>Scrolly McHaptic</string>
+</dict>
+</plist>
