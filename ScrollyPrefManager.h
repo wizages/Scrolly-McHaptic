@@ -10,4 +10,6 @@
 
 
 + (instancetype)sharedInstance;
+
+-(BOOL)isApplicationEnabled:(NSString *)bundleName;
 @end

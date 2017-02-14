@@ -24,7 +24,9 @@ static void hapticFeedback(NSInteger arg1){
 
 	BOOL returnValue = %orig;
 
-	if ([[ScrollyPrefManager sharedInstance] enabled])
+	HBLogDebug(@"%@",[[NSBundle mainBundle] bundleIdentifier])
+
+	if ([[ScrollyPrefManager sharedInstance] enabled] && ![[ScrollyPrefManager sharedInstance] isApplicationEnabled:[[NSBundle mainBundle] bundleIdentifier]])
 	{
 		CGPoint offset = self.contentOffset;
 	    CGRect bounds = self.bounds;

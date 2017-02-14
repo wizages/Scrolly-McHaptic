@@ -6,6 +6,7 @@ TWEAK_NAME = ScrollyMcHaptic
 ScrollyMcHaptic_FILES = Tweak.xm ScrollyPrefManager.m
 ScrollyMcHaptic_FRAMEWORKS = AudioToolbox
 ScrollyMcHaptic_EXTRA_FRAMEWORKS = Cephei
+ScrollyMcHaptic_LIBRARIES = applist
 
 include $(THEOS_MAKE_PATH)/tweak.mk
 

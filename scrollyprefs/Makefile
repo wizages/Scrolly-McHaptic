@@ -8,6 +8,7 @@ scrollyprefs_INSTALL_PATH = /Library/PreferenceBundles
 scrollyprefs_FRAMEWORKS = UIKit
 scrollyprefs_PRIVATE_FRAMEWORKS = Preferences
 scrollyprefs_EXTRA_FRAMEWORKS = CepheiPrefs Cephei
+scrollyprefs_LIBRARIES = applist
 
 include $(THEOS_MAKE_PATH)/bundle.mk
 

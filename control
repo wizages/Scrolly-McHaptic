@@ -1,6 +1,6 @@
 Package: com.wizage.scrollymchaptic
 Name: ScrollyMcHaptic
-Depends: mobilesubstrate, ws.hbang.common
+Depends: mobilesubstrate, ws.hbang.common, applist
 Version: 1.0~beta1
 Architecture: iphoneos-arm
 Description: OpenSauce Haptic Scrolling for all sorts of scrolling windows!

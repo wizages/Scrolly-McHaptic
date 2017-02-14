@@ -7,6 +7,12 @@ static NSString *const kSMBotEnabledKey = @"bot_enabled";
 static NSString *const kSMTopIntKey = @"top_intensity";
 static NSString *const kSMBotIntKey = @"bot_intensity";
 
+@interface HBPreferences (private)
+
+-(void)_preferencesChanged;
+
+@end
+
 
 @implementation ScrollyPrefManager {
 	HBPreferences *_preferences;
@@ -18,8 +24,13 @@ static NSString *const kSMBotIntKey = @"bot_intensity";
 	dispatch_once(&onceToken, ^{
 		sharedInstance = [[self alloc] init];
 	});
-
+	[sharedInstance updatePrefs];
 	return sharedInstance;
+}
+
+-(void)updatePrefs
+{
+	[_preferences _preferencesChanged];
 }
 
 - (instancetype)init {
@@ -34,6 +45,10 @@ static NSString *const kSMBotIntKey = @"bot_intensity";
 	}
 
 	return self;
+}
+
+-(BOOL)isApplicationEnabled:(NSString *)bundleName{
+	return [_preferences boolForKey:[NSString stringWithFormat:@"disabled-%@", bundleName] default:false];
 }
 
 #pragma mark - Memory management
