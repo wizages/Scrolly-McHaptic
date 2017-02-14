@@ -1,9 +1,10 @@
 Package: com.wizage.scrollymchaptic
 Name: ScrollyMcHaptic
-Depends: mobilesubstrate
-Version: 0.0.1
+Depends: mobilesubstrate, ws.hbang.common
+Version: 1.0~beta1
 Architecture: iphoneos-arm
-Description: An awesome MobileSubstrate tweak!
+Description: OpenSauce Haptic Scrolling for all sorts of scrolling windows!
 Maintainer: wizage
 Author: wizage
 Section: Tweaks
+Depiction: http://wizages.com/cydia/depictions/?dep=com.wizage.scrollymchaptic
